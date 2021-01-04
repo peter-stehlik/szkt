@@ -1,0 +1,17 @@
+FONTY
+DM Serif Display - nadpisy
+Roboto 300, 500
+
+VEºKOSTI PÕSMA, RIADKU
+48px, 66px
+23px, 32px
+16px, 19px (chcem sa prihl·siù, beûn˝ text)
+14px, 17px (p‰tiËka)
+10px, 12px (drobkov· navig·cia - na mobile)
+
+PALETA FARIEB
+#009B2D zelen·
+#F2F2F2 svetl· öed· (landing page, akcie)
+#C4C4C4 svetl· stredn· (PRIPRAVUJEME)
+#000000 Ëierna (navig·cia, cta, p‰tiËka)
+#333333 Ëierna (beûn˝ text)
