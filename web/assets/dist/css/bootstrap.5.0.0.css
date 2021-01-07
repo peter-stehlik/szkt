@@ -3403,6 +3403,10 @@ progress {
   filter: invert(1) grayscale(100%) brightness(200%);
 }
 
+body {
+  background: #e9ecef;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -3437,22 +3441,81 @@ header {
 }
 
 /* TOP NAVIGATION */
+#topNav {
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+#topNav.is-active {
+  min-height: calc(100vh - 76px);
+  max-height: 1000px;
+}
+
 .top-nav {
   display: flex;
   flex-direction: column;
-  padding: 0;
+  width: 100%;
+  padding: 1rem 3rem;
   margin: 0;
   list-style-type: none;
+  text-align: right;
+}
+.top-nav li {
+  padding: 0.3333333333rem 0;
+}
+.top-nav > li {
+  position: relative;
 }
 .top-nav ul {
+  max-height: 0;
   padding: 0;
   margin: inherit;
   list-style-type: inherit;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+.top-nav ul.is-active {
+  max-height: 700px;
+}
+.top-nav ul a {
+  font-weight: 300;
+  text-transform: none;
 }
 .top-nav a {
   font-weight: 500;
   text-transform: uppercase;
   color: #000;
+}
+
+.submenu-toggler {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 25px;
+  height: 35px;
+  margin-left: 20px;
+  background: url(../../../images/submenu-toggler.svg) center center no-repeat;
+  background-size: 15px;
+  transition: transform 0.1s ease-in;
+}
+.submenu-toggler.is-active {
+  transform: rotate(180deg);
+}
+
+/* NAV CONTACTS */
+.nav-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  padding: 1rem 3rem;
+}
+.nav-contacts a {
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: 1.4375rem;
+  line-height: 2.875rem;
 }
 
 @media (min-width: 992px) {
@@ -3471,8 +3534,16 @@ header {
     display: none;
   }
 
+  #topNav {
+    justify-content: center;
+    max-height: none;
+    overflow: visible;
+  }
+
   .top-nav {
     flex-direction: row;
+    width: auto;
+    padding: 0;
   }
   .top-nav > li {
     position: relative;
@@ -3487,8 +3558,10 @@ header {
     left: -50%;
     top: 100%;
     width: 200%;
+    max-height: none;
     padding: 0.5rem 0;
     background-color: #009B2D;
+    text-align: left;
     opacity: 0;
     transform: scale(0);
     transition: all 0.2s ease-out;
@@ -3510,11 +3583,13 @@ header {
   }
   .top-nav ul a {
     color: #fff;
-    text-transform: none;
-    font-weight: 300;
   }
   .top-nav ul a:hover {
     color: #accc6c;
+  }
+
+  .submenu-toggler {
+    display: none;
   }
 }
 .clearfix::after {
