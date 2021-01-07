@@ -3403,6 +3403,11 @@ progress {
   filter: invert(1) grayscale(100%) brightness(200%);
 }
 
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
 body {
   padding-top: 76px;
 }
@@ -3441,6 +3446,10 @@ header {
 }
 
 /* TOP NAVIGATION */
+header nav {
+  width: 100%;
+}
+
 #topNav {
   flex-direction: column;
   justify-content: space-between;
@@ -3520,7 +3529,15 @@ header {
 
 @media (min-width: 992px) {
   body {
-    padding-top: 135px;
+    padding-top: 76px;
+  }
+
+  header .break {
+    order: 5;
+  }
+
+  #topNav {
+    order: 2;
   }
 
   .social-wrap {
@@ -3528,11 +3545,11 @@ header {
   }
 
   .logo-wrap {
-    order: 2;
+    order: 1;
   }
 
   .hamburger-wrap {
-    order: 1;
+    order: 4;
   }
   .hamburger-wrap .nav-toggler {
     display: none;
@@ -3548,9 +3565,12 @@ header {
     flex-direction: row;
     width: auto;
     padding: 0;
+    text-align: center;
   }
   .top-nav > li {
     position: relative;
+    display: flex;
+    align-items: center;
     padding: 1rem;
   }
   .top-nav > li:hover ul {

@@ -1,5 +1,5 @@
 $header-height-mobile: 76px; 
-$header-height-desktop: 135px; 
+$header-height-desktop: 76px; 
 
 body {
 	padding-top: $header-height-mobile;
@@ -47,6 +47,11 @@ header {
 	}
 }
 /* TOP NAVIGATION */
+header {
+	nav {
+		width: 100%;
+	}
+}
 #topNav {
 	flex-direction: column;
 	justify-content: space-between;
@@ -125,15 +130,22 @@ header {
 	body {
 		padding-top: $header-height-desktop;
 	}
-
+	header {
+		.break {
+			order: 5;
+		}
+	}
+	#topNav {
+		order: 2;
+	}
 	.social-wrap {
 		order: 3;
 	}
 	.logo-wrap {
-		order: 2;
+		order: 1;
 	}
 	.hamburger-wrap {
-		order: 1;
+		order: 4;
 		.nav-toggler {
 			display: none;
 		}
@@ -147,8 +159,11 @@ header {
 		flex-direction: row;
 		width: auto;
 		padding: 0;
+		text-align: center;
 		> li {
 			position: relative;
+			display: flex;
+			align-items: center;
 			padding: $spacer/2;
 			&:hover {
 				ul {
