@@ -1,6 +1,8 @@
 $header-height-mobile: 76px; 
+$header-height-desktop: 135px; 
+
 body {
-	background: $gray-200;
+	padding-top: $header-height-mobile;
 }
 
 header {
@@ -111,15 +113,19 @@ header {
 	flex-direction: column;
 	align-items: flex-end;
 	width: 100%;
-	padding: $spacer/2 $spacer*3/2;
+	padding: $spacer/2 $spacer*3/2 $spacer/2 0;
 	a {
-		font-family: $font-family-serif;
+		font-family: $font-family-sans-serif-2;
 		font-size: $font-size-lg;
 		line-height: $font-size-lg*2;
 	}
 }
 
 @include media-breakpoint-up(lg) {
+	body {
+		padding-top: $header-height-desktop;
+	}
+
 	.social-wrap {
 		order: 3;
 	}

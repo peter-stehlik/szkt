@@ -39,7 +39,7 @@ $red:     #dc3545 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
 $green:   #009B2D !default;
-$teal:    #accc6c !default;
+$teal:    #AFCD69 !default;
 $cyan:    #0dcaf0 !default;
 
 // scss-docs-start colors-map
@@ -394,7 +394,7 @@ $aspect-ratios: (
 
 // stylelint-disable value-keyword-case
 $font-family-sans-serif:      Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-serif:           "DM Serif Display", Georgia, serif;
+$font-family-sans-serif-2:           "Hammersmith One", Arial, sans-serif;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$variable-prefix}font-sans-serif) !default;
