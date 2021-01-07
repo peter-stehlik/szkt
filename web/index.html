@@ -7,15 +7,75 @@
 	<title>SZKT.sk</title>
 	<meta name="description" content="">
 
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300;1,500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
 	<link rel="stylesheet" href="assets/dist/css/bootstrap.5.0.0.css">
 </head>
 <body>
+	<header>
+		<div class="container">
+			<div class="d-flex align-items-center">
+				<div class="col social-wrap text-lg-end">
+					<a class="fb" href="https://www.facebook.com/spolocnost.szkt" target="_blank">
+						<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M15 0C6.7 0 0 6.7 0 15C0 23.3 6.7 30 15 30C23.3 30 30 23.3 30 15C30 6.7 23.3 0 15 0ZM18.9 15H16.3V24.2H12.5V15H10.6V11.8H12.5V9.9C12.5 7.9 13.2 6.7 14.5 6.2C15.2 5.9 15.7 5.9 16.3 5.9H19.2V9H17.5C17 9 16.7 9.1 16.5 9.4C16.4 9.6 16.3 9.9 16.3 10.4V11.8H19.2L18.9 15Z"/>
+						</svg>
+					</a>
+				</div>
+
+				<div class="col text-center logo-wrap">
+					<a href="#">
+						<img src="images/logo.svg" width="76" height="76" alt="">
+					</a>
+				</div>
+
+				<div class="col text-end hamburger-wrap">
+					<a class="nav-toggler js-nav-toggler" id="navToggler" href="javascript:void(0);">
+						<svg width="30" height="30" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<line class="l1" y1="0.5" x2="30" y2="0.5" />
+							<line class="l2" y1="19.5" x2="30" y2="19.5" />
+							<line class="l3" y1="10.5" x2="30" y2="10.5" />
+						</svg>
+					</a>
+				</div>
+			</div>
+
+			<nav class="d-flex justify-content-center align-items-center" id="topNav">
+				<ul class="top-nav">
+					<li><a href="#">O spoločnosti</a></li>
+					<li><a href="#">Sekcie</a>
+						<ul>
+							<li><a href="#">ZaKA</a></li>
+							<li><a href="#">Správa mestskej zelene</a></li>
+							<li><a href="#">Realizátori a údržba zelene</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Galéria</a></li>
+					<li><a href="#">Na stiahnutie</a></li>
+					<li><a href="#">Akcie</a></li>
+					<li><a href="#">Knižnica</a>
+						<ul>
+							<li><a href="#">Prihláška nového člena</a></li>
+							<li><a href="#">STN a normy</a></li>
+							<li><a href="#">Valné zhromaždenie</a></li>
+							<li><a href="#">Infolisty</a></li>
+							<li><a href="#">Arboristické štandardy</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Kontakty</a></li>
+				</ul><!-- / .top-nav -->
+			</nav>
+		</div><!-- / .container -->
+	</header>
+
 	<div class="container">
 		<div class="row">
 
 		</div><!-- / .row -->
 	</div><!-- / .container -->
 
-	<script src="assets/dist/js/main.js"></script>
+	<script src="assets/dist/js/custom.js"></script>
 </body>
 </html>

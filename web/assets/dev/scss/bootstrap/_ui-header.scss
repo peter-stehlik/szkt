@@ -1,0 +1,123 @@
+$header-height-mobile: 76px; 
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: $white;
+}
+
+/* SOCIAL */
+.fb {
+	svg {
+		transition: fill .2s ease-in;
+		fill: $gray-800;
+	}
+	&:hover {
+		svg {
+			fill: $primary;
+		}
+	}
+}
+/* HAMBURGER MENU TOGGLER */
+.nav-toggler {
+	svg {
+		line {
+			transition: all .2s ease-in;
+			stroke: $black;
+		}
+	}
+	&.is-active {
+		.l1 {
+			transform: translateX(5px) rotate(45deg);
+		}
+		.l2 {
+			transform: translateX(-9px) translateY(8px) rotate(-45deg);
+		}
+		.l3 {
+			transform: translateX(-10px);
+			opacity: 0;
+		}
+	}
+}
+/* TOP NAVIGATION */
+.top-nav {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	ul {
+		padding: 0;
+		margin: inherit;
+		list-style-type: inherit;
+	}
+	a {
+		font-weight: 500;
+		text-transform: uppercase;
+		color: $black;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.social-wrap {
+		order: 3;
+	}
+	.logo-wrap {
+		order: 2;
+	}
+	.hamburger-wrap {
+		order: 1;
+		.nav-toggler {
+			display: none;
+		}
+	}
+	.top-nav {
+		flex-direction: row;
+		> li {
+			position: relative;
+			padding: $spacer/2;
+			&:hover {
+				ul {
+					opacity: 1;
+					transform: scale(1);
+				}
+			}
+		}
+		ul {
+			position: absolute;
+			left: -50%;
+			top: 100%;
+			width: 200%;
+			padding: $spacer/4 0;
+			background-color: $primary;
+			opacity: 0;
+			transform: scale(0);
+			transition: all .2s ease-out;
+			&:before {
+				content:"";
+				position: absolute;
+				top: 0;
+				left: 50%;
+				width: 0;
+				height: 0;
+				margin-left: -10px;
+				border-top: 10px solid $white;
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+			}
+			li {
+				padding: $spacer/4 $spacer/2;
+			}
+			a {
+				color: $white;
+				text-transform: none;
+				font-weight: 300;
+				&:hover {
+					color: $teal;
+				}
+			}
+		}
+	}
+}
