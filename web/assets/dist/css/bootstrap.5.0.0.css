@@ -3675,9 +3675,9 @@ p {
 
 .szkt-leaves-lp {
   position: absolute;
-  left: 0;
+  left: -40px;
   right: 0;
-  top: 120px;
+  top: 10px;
   margin: auto;
   z-index: -1;
   max-width: 580px;
@@ -3707,6 +3707,26 @@ p {
   width: 120px;
 }
 
+@media (min-width: 200px) {
+  .szkt-leaves-lp {
+    top: 115px;
+  }
+}
+@media (min-width: 315px) {
+  .szkt-leaves-lp {
+    top: 85px;
+  }
+}
+@media (min-width: 360px) {
+  .szkt-leaves-lp {
+    top: 85px;
+  }
+}
+@media (min-width: 515px) {
+  .szkt-leaves-lp {
+    top: 30px;
+  }
+}
 @media (min-width: 992px) {
   .hero {
     margin-bottom: 100px;
