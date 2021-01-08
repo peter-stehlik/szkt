@@ -1,0 +1,121 @@
+$primary-font: 'Hammersmith One', sans-serif;
+$secondary-font: 'Roboto', sans-serif;
+
+$header-color: #333333;
+$article-notice-color: #c4c4c4;
+$article-header-color: #333333;
+$article-text-color: #333333;
+
+$main-background:#009B2D;
+$invitation-color: #ffffff;
+$want-login-color: #000000;
+
+
+
+
+p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.header {
+    font: {
+        family: $primary-font;
+        size: 24px;
+        weight: 400;
+    }
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.header-secondary {
+    font: {
+        family: $primary-font;
+        size: 15px;
+        weight: 400;
+    }
+    line-height: 19px;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+
+.article-notice {
+    font: {
+        family: $primary-font;
+        size: 11px;
+        weight: 400;
+    }
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $article-notice-color;
+
+}
+
+
+
+
+.article-header {
+    font: {
+        family: $primary-font;
+        size: 14px;
+        weight: 400;
+    }
+    line-height: 17.5px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $article-header-color;
+
+}
+
+.article-text {
+    font: {
+        family: $secondary-font;
+        size: 9px;
+        weight: 300;
+    }
+    line-height: 11px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $article-text-color;
+
+}
+
+
+
+
+.szkt-leaves-lp {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 120px;
+    margin: auto;
+    z-index: -1;
+    max-width: 580px;
+    width: 100%;
+}
+
+.landing-notice-img {
+    min-width: 170px;
+}
+
+.line-green {
+    border: 3px solid #AFCD69;
+    margin: 0;
+}
+
+.main-backgroung {
+    background: $main-background;
+}
+
+.invitation {
+    color: $invitation-color;
+}
+.want-login {
+    color: $want-login-color;
+    border-bottom: 3px solid $invitation-color;
+    width: 120px;
+}
