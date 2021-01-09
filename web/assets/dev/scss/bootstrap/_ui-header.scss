@@ -1,5 +1,5 @@
-$header-height-mobile: 76px; 
-$header-height-desktop: 76px; 
+$header-height-mobile: 76px;
+$header-height-desktop: 76px;
 
 body {
 	padding-top: $header-height-mobile;
@@ -11,6 +11,7 @@ header {
 	left: 0;
 	width: 100%;
 	background: $white;
+	z-index: 20;
 }
 
 /* SOCIAL */

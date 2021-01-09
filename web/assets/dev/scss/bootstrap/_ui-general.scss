@@ -1,4 +1,138 @@
+//$link-color
+//$font-family-sans-serif-2
+//$h1-font-size
+
+/*$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size
+) !default;*/
+
+
+
+
+
+
+p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: inherit;
+}
+
 .break {
 	flex-basis: 100%;
 	height: 0;
+}
+
+.header {
+    font: {
+        family: $font-family-sans-serif-2;
+        size: $h1-font-size/2;
+        weight: $font-weight-normal;
+    }
+    line-height: $line-height-sm;
+    letter-spacing: 0em;
+}
+
+.header-secondary {
+    font: {
+        family: $font-family-sans-serif-2;
+        size: $h2-font-size;
+        weight: $font-weight-normal;
+    }
+    line-height:$line-height-sm;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.article-notice, .article-listen {
+    font: {
+        family: $font-family-sans-serif-2;
+        size: $font-size-xs;
+        weight: $font-weight-normal;
+    }
+    line-height: $line-height-sm;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    color: $gray-400;
+}
+
+.article-header {
+    font: {
+        family: $font-family-sans-serif-2;
+        size: $font-size-base * 0.875;
+        weight: $font-weight-normal;
+    }
+    line-height: $line-height-sm;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $gray-800;
+}
+
+.article-text {
+    font: {
+        family: $font-family-sans-serif;
+        size: $font-size-base * 0.55;
+        weight: $font-weight-lighter;
+    }
+    line-height: $line-height-sm;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $gray-800;
+}
+
+.article-listen {
+    display: none;
+    color: $black;
+    border-bottom: 3px solid $primary;
+}
+
+
+@include media-breakpoint-up(lg) {
+	.header {
+		font: {
+			size: $h1-font-size;
+		}
+    }
+
+    .header-secondary {
+        font: {
+            size: $h2-font-size * 1.5;
+        }
+    }
+
+    .article-notice {
+        font: {
+            size: $font-size-base;
+        }
+        margin-top: 2rem;
+    }
+
+    .article-header {
+        font: {
+            size: $font-size-base * 1.45;
+        }
+        line-height: $line-height-sm;
+    }
+
+    .article-text {
+        font: {
+            size: $font-size-base ;
+        }
+    }
+
+    .article-listen {
+        display: inline-block;
+         font: {
+            size: $font-size-base;
+        }
+    }
 }

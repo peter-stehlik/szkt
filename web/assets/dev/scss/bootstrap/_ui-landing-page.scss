@@ -1,91 +1,15 @@
-$primary-font: 'Hammersmith One', sans-serif;
-$secondary-font: 'Roboto', sans-serif;
-
-$header-color: #333333;
-$article-notice-color: #c4c4c4;
-$article-header-color: #333333;
-$article-text-color: #333333;
-
-$main-background:#009B2D;
-$invitation-color: #ffffff;
-$want-login-color: #000000;
-
 
 @import "ui-landing-page-report";
 
 
 
 
-p {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
+
+
 
 .landing-page {
     position: relative;
 }
-
-.header {
-    font: {
-        family: $primary-font;
-        size: 24px;
-        weight: 400;
-    }
-    line-height: 30px;
-    letter-spacing: 0em;
-    text-align: center;
-}
-
-.header-secondary {
-    font: {
-        family: $primary-font;
-        size: 15px;
-        weight: 400;
-    }
-    line-height: 19px;
-    letter-spacing: 0;
-    text-align: center;
-}
-
-
-.article-notice {
-    font: {
-        family: $primary-font;
-        size: 11px;
-        weight: 400;
-    }
-    line-height: 13px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: $article-notice-color;
-}
-
-
-.article-header {
-    font: {
-        family: $primary-font;
-        size: 14px;
-        weight: 400;
-    }
-    line-height: 17.5px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: $article-header-color;
-}
-
-.article-text {
-    font: {
-        family: $secondary-font;
-        size: 9px;
-        weight: 300;
-    }
-    line-height: 11px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: $article-text-color;
-}
-
-
 
 
 .szkt-leaves-lp {
@@ -103,21 +27,53 @@ p {
     min-width: 170px;
 }
 
-.line-green {
-    border: 3px solid #AFCD69;
+.prepare {
+    border-top: 3px solid $teal;
     margin: 0;
 }
 
-.main-backgroung {
-    background: $main-background;
+.landing-intro {
+    background: $gray-100;
 }
 
-.invitation {
-    color: $invitation-color;
+.triangle-position {
+    position: relative;
 }
+
+.triangle-action, .triangle-prepare {
+    display: none;
+    position: absolute;
+    top: -25px;
+    width: 0px;
+    height: 0px;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 45px solid $primary;
+}
+
+.triangle-prepare {
+    left: 0;
+    right: 0;
+    top: -8px;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 25px solid $teal;
+}
+
+.main-backgroung {
+    background: $green;
+}
+
+
+.invitation {
+    color: $white;
+}
+
 .want-login {
-    color: $want-login-color;
-    border-bottom: 3px solid $invitation-color;
+    color: $black;
+    border-bottom: 3px solid $white;
     width: 120px;
 }
 
@@ -128,26 +84,12 @@ p {
 
 
 
-@media(min-width: 200px) {
+
+@media(min-width: 320px) {
     .szkt-leaves-lp {
-        top: 115px;
+        top: 60px;
     }
 }
-
-
-
-@media(min-width: 315px) {
-    .szkt-leaves-lp {
-        top: 85px;
-    }
-}
-
-@media(min-width: 360px) {
-    .szkt-leaves-lp {
-        top: 85px;
-    }
-}
-
 
 @media(min-width: 515px) {
     .szkt-leaves-lp {
@@ -155,10 +97,50 @@ p {
     }
 }
 
+@include media-breakpoint-up(lg) {
+    .line-green {
+        visibility: hidden;
+        padding-top: 80px;
+    }
+    .szkt-leaves-lp {
+        left: -15px;
+        top: 160px;
+        margin: 0;
+        z-index: 1;
+        width: 35vw;
+    }
+
+    .want-login {
+        width: 170px;
+    }
+
+    .prepare {
+        border: 0;
+    }
+    .prepare-height {
+        height: 12rem;
+    }
+
+    .triangle-action, .triangle-prepare {
+        display: block;
+    }
+}
 
 
 
-@media (min-width: 992px) {
+
+@include media-breakpoint-up(xl) {
+    .szkt-leaves-lp {
+        left: -60px;
+        top: 80px;
+        margin: 0;
+        z-index: 1;
+        width: 37vw;
+    }
+}
+
+
+/*@media (min-width: 992px) {
 
     .hero {
         margin-bottom: 100px;
@@ -167,6 +149,31 @@ p {
     .line-green {
         visibility: hidden;
         padding-top: 80px;
+    }
+    .line-background {
+        background: #ffffff;
+    }
+
+    .landing-intro {
+        position: relative;
+    }
+
+    .triangle-action, .triangle-prepare {
+        display: block;
+        position: absolute;
+    }
+
+    .triangle-action {
+        top: -25px;
+    }
+
+    .triangle-prepare {
+        top: -7px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
     }
 
     .header {
@@ -187,6 +194,7 @@ p {
         font: {
             size: 16px;
         }
+        margin-top: 30px;
         line-height: 20px;
     }
 
@@ -213,13 +221,7 @@ p {
          text-align: center;
      }
 
-    .szkt-leaves-lp {
-        left: -15px;
-        top: 160px;
-        margin: 0;
-        z-index: 1;
-        width: 35vw;
-    }
+
     .want-login {
         width: 170px;
     }
@@ -245,3 +247,4 @@ p {
         width: 580px;
     }
 }
+*/
