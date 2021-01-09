@@ -3511,6 +3511,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 7;
   width: 100%;
   background: #fff;
   z-index: 20;
@@ -3714,6 +3715,12 @@ header nav {
 }
 .reports {
   text-align: left;
+}
+
+.short-line {
+  border-bottom: 1px solid #000;
+  width: 84px;
+  margin-top: 1rem;
 }
 
 .landing-page {
