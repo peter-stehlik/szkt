@@ -3623,6 +3623,7 @@ header nav {
   font-family: "Hammersmith One", Arial, sans-serif;
   font-size: 1.4375rem;
   line-height: 2.875rem;
+  color: #009B2D;
 }
 
 @media (min-width: 992px) {
@@ -3712,134 +3713,6 @@ header nav {
 
   .submenu-toggler {
     display: none;
-  }
-}
-.reports {
-  text-align: left;
-  padding: 0;
-}
-.reports div div h1, .reports div div .h1 {
-  margin-top: 1rem;
-}
-
-.reports-became div {
-  margin: 0 0 1rem 0;
-}
-.reports-became div div:nth-child(1) {
-  padding: 0 1rem 0 0;
-  margin: 0;
-}
-.reports-became div div:nth-child(2) {
-  padding: 0;
-  margin: 0;
-}
-
-.short-line {
-  border-bottom: 1px solid #000;
-  width: 76px;
-}
-
-@media (min-width: 992px) {
-  .short-line {
-    width: 84px;
-    margin-left: -2rem;
-  }
-
-  .reports-became div {
-    padding: 1rem 1rem 0 1rem;
-  }
-
-  .reports-prepare div {
-    margin-bottom: 1rem;
-    padding: 1rem;
-  }
-}
-.watch-fb {
-  background: #009B2D;
-  margin-top: 28vw;
-  padding-top: 5rem;
-}
-
-.fb-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 448px;
-}
-
-.text-fb {
-  z-index: 5;
-}
-
-@media (min-width: 460px) {
-  .watch-fb {
-    margin-top: 9rem;
-  }
-}
-@media (min-width: 992px) {
-  .watch-fb {
-    margin-top: 6rem;
-    padding-top: 1rem;
-  }
-
-  .fb-image {
-    left: 5rem;
-    margin-left: unset;
-    margin-right: unset;
-  }
-}
-.footer {
-  border-top: 1px solid #000;
-}
-
-.footer-logo {
-  max-width: 80px;
-}
-
-.footer-mail {
-  color: #009B2D;
-}
-
-.footer-links a {
-  display: block;
-}
-
-.color-link {
-  color: #009B2D;
-}
-
-.footer-copyright {
-  color: #c4c4c4;
-}
-
-.back-to-top {
-  background: #009B2D;
-}
-
-.back-to-top-img {
-  width: 13px;
-}
-
-@media (min-width: 992px) {
-  .footer {
-    border-top: 1px solid #000;
-    margin: 2rem 4rem;
-    margin-bottom: 4rem;
-  }
-
-  .back-to-top {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 84px;
-    margin-right: 0rem;
-  }
-
-  .back-to-top-img {
-    width: 25px;
   }
 }
 .landing-page {

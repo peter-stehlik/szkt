@@ -58,14 +58,3 @@ var Custom = {
 };
 Custom.toggleMobNav();
 Custom.prepareMobSubNav();
-
-
-
-const scrollTopIcon = document.getElementsByClassName('back-to-top')[0];
-
-const scrollToTop = () => {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-scrollTopIcon.addEventListener('click', scrollToTop);
