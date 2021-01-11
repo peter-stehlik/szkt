@@ -3791,6 +3791,57 @@ header nav {
     margin-right: unset;
   }
 }
+.footer {
+  border-top: 1px solid #000;
+}
+
+.footer-logo {
+  max-width: 80px;
+}
+
+.footer-mail {
+  color: #009B2D;
+}
+
+.footer-links a {
+  display: block;
+}
+
+.color-link {
+  color: #009B2D;
+}
+
+.footer-copyright {
+  color: #c4c4c4;
+}
+
+.back-to-top {
+  background: #009B2D;
+}
+
+.back-to-top-img {
+  width: 13px;
+}
+
+@media (min-width: 992px) {
+  .footer {
+    border-top: 1px solid #000;
+    margin: 2rem 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .back-to-top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 84px;
+    margin-right: 0rem;
+  }
+
+  .back-to-top-img {
+    width: 25px;
+  }
+}
 .landing-page {
   position: relative;
 }
@@ -3908,114 +3959,6 @@ header nav {
     width: 37vw;
   }
 }
-/*@media (min-width: 992px) {
-
-    .hero {
-        margin-bottom: 100px;
-    }
-
-    .line-green {
-        visibility: hidden;
-        padding-top: 80px;
-    }
-    .line-background {
-        background: #ffffff;
-    }
-
-    .landing-intro {
-        position: relative;
-    }
-
-    .triangle-action, .triangle-prepare {
-        display: block;
-        position: absolute;
-    }
-
-    .triangle-action {
-        top: -25px;
-    }
-
-    .triangle-prepare {
-        top: -7px;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100px;
-    }
-
-    .header {
-        font: {
-            size: 48px;
-        }
-        line-height: 60px;
-    }
-
-    .header-secondary {
-        font: {
-            size: 23px;
-        }
-        line-height: 29px;
-    }
-
-    .article-notice {
-        font: {
-            size: 16px;
-        }
-        margin-top: 30px;
-        line-height: 20px;
-    }
-
-    .article-header {
-        font: {
-            family: $primary-font;
-            size: 23px;
-            weight: 400;
-        }
-        line-height: 29px;
-
-    }
-
-    .article-text {
-        font: {
-            family: $secondary-font;
-            size: 16px;
-            weight: 300;
-        }
-        line-height: 19px;
-    }
-
-    .prepare {
-         text-align: center;
-     }
-
-
-    .want-login {
-        width: 170px;
-    }
-}
-
-
-@media(min-width: 1200px) {
-    .szkt-leaves-lp {
-        top: 85px;
-        width: 40vw;
-    }
-
-    .line-green {
-        padding-top: 140px;
-    }
-
-
-}
-
-
-@media(min-width: 1700px) {
-    .szkt-leaves-lp {
-        width: 580px;
-    }
-}
-*/
 .clearfix::after {
   display: block;
   clear: both;
