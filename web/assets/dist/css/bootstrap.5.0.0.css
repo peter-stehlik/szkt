@@ -3737,6 +3737,15 @@ header nav {
 .landing-notice-img {
   min-width: 170px;
 }
+.landing-notice-img a {
+  display: block;
+  height: 100%;
+}
+.landing-notice-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 
 .prepare {
   border-top: 3px solid #AFCD69;
