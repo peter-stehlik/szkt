@@ -1,0 +1,60 @@
+.footer {
+    border-top: 1px solid $black;
+}
+
+.footer-logo {
+    max-width: 80px;
+}
+
+.footer-mail {
+    color: $primary;
+}
+
+.footer-links {
+    a {
+        display: block;
+    }
+}
+
+.color-link {
+    color: $primary;
+}
+
+.footer-copyright {
+    color: $gray-400;
+}
+
+.back-to-top {
+    background: $primary;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.back-to-top-img {
+    width: 13px;
+}
+
+.back-to-top-visible {
+    opacity: 1;
+}
+
+
+@include media-breakpoint-up(lg) {
+    .footer {
+        border-top: 1px solid $black;
+        margin: 2rem 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .back-to-top {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 84px;
+        margin-right: 0rem;
+    }
+    .back-to-top-img {
+        width: 25px;
+    }
+
+}

@@ -54,18 +54,25 @@ var Custom = {
     $links.forEach(function (el) {
       return el.addEventListener("click", toggleSubNav);
     });
+  },
+  scrollToTop: function scrollToTop() {
+    var scrollTopIcon = document.getElementsByClassName('back-to-top')[0];
+    var page = document.getElementsByClassName('hero')[0];
+    var backToTop = document.getElementsByClassName('back-to-top')[0];
+    var observer = new IntersectionObserver(function (entries) {
+      var isIntersecting = entries[0].isIntersecting;
+      !isIntersecting ? backToTop.classList.add('back-to-top-visible') : backToTop.classList.remove('back-to-top-visible');
+    });
+    observer.observe(page);
+
+    var scrollToTop = function scrollToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    };
+
+    scrollTopIcon.addEventListener('click', scrollToTop);
   }
 };
 Custom.toggleMobNav();
 Custom.prepareMobSubNav();
-
-
-
-const scrollTopIcon = document.getElementsByClassName('back-to-top')[0];
-
-const scrollToTop = () => {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-scrollTopIcon.addEventListener('click', scrollToTop);
+Custom.scrollToTop();

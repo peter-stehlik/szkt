@@ -1,0 +1,41 @@
+.watch-fb {
+    background: $primary;
+    margin-top: 28vw;
+    padding-top: 5rem;
+}
+
+.fb-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 448px;
+}
+
+.text-fb {
+    z-index: 5;
+}
+
+
+@media(min-width: 460px) {
+    .watch-fb {
+        margin-top: 9rem;
+    }
+}
+
+
+@include media-breakpoint-up(lg) {
+
+    .watch-fb {
+        margin-top: 6rem;
+        padding-top: 1rem;
+    }
+
+    .fb-image {
+        left: 5rem;
+        margin-left: unset;
+        margin-right: unset;
+    }
+}

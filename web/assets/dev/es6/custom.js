@@ -45,7 +45,31 @@ let Custom = {
 
 		$links.forEach(el => el.addEventListener("click", toggleSubNav));
 	},
+	scrollToTop: () => {
+		const scrollTopIcon = document.getElementsByClassName('back-to-top')[0];
+		const page = document.getElementsByClassName('hero')[0];
+		const backToTop = document.getElementsByClassName('back-to-top')[0];
+
+		let observer = new IntersectionObserver( entries => {
+			let isIntersecting = (entries[0].isIntersecting);
+			!isIntersecting ?
+				backToTop.classList.add('back-to-top-visible')
+			:
+				backToTop.classList.remove('back-to-top-visible')
+		})
+
+		observer.observe(page);
+
+		const scrollToTop = () => {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+		scrollTopIcon.addEventListener('click', scrollToTop);
+	}
 }
 
 Custom.toggleMobNav();
 Custom.prepareMobSubNav();
+Custom.scrollToTop();
+
+

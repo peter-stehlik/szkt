@@ -1,0 +1,58 @@
+.reports {
+    text-align: left;
+    padding: 0;
+    div {
+        div {
+            h1 {
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+.reports-became {
+        div {
+            margin: 0 0 1rem 0;
+
+            div:nth-child(1) {
+                padding: 0 1rem 0 0;
+                margin: 0;
+            }
+            div:nth-child(2) {
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+        }
+    }
+
+.short-line {
+    border-bottom: 1px solid $black;
+    width: 76px;
+}
+
+
+
+@include media-breakpoint-up(lg) {
+
+    .short-line {
+        width: 84px;
+        margin-left: -2rem;
+    }
+
+    .reports-became {
+        div {
+            padding: 1rem 1rem 0 1rem;
+        }
+    }
+
+    .reports-prepare {
+        div {
+            margin-bottom: 1rem;
+            padding: 1rem;
+        }
+    }
+
+}
