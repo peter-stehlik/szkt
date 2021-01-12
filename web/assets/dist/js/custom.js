@@ -57,13 +57,11 @@ var Custom = {
   },
   scrollToTop: function scrollToTop() {
     var scrollTopIcon = document.getElementsByClassName('back-to-top')[0];
-    var page = document.getElementsByClassName('hero')[0];
     var backToTop = document.getElementsByClassName('back-to-top')[0];
-    var observer = new IntersectionObserver(function (entries) {
-      var isIntersecting = entries[0].isIntersecting;
-      !isIntersecting ? backToTop.classList.add('back-to-top-visible') : backToTop.classList.remove('back-to-top-visible');
+    document.addEventListener('scroll', function () {
+      var position = window.scrollY;
+      position >= 150 ? backToTop.classList.add('back-to-top-visible') : backToTop.classList.remove('back-to-top-visible');
     });
-    observer.observe(page);
 
     var scrollToTop = function scrollToTop() {
       document.body.scrollTop = 0;
@@ -75,7 +73,4 @@ var Custom = {
 };
 Custom.toggleMobNav();
 Custom.prepareMobSubNav();
-<<<<<<< HEAD
 Custom.scrollToTop();
-=======
->>>>>>> 0dd869d2aad3ddb2ea33bd32a6deaa77adcea0f1

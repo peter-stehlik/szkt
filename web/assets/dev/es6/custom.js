@@ -47,18 +47,15 @@ let Custom = {
 	},
 	scrollToTop: () => {
 		const scrollTopIcon = document.getElementsByClassName('back-to-top')[0];
-		const page = document.getElementsByClassName('hero')[0];
 		const backToTop = document.getElementsByClassName('back-to-top')[0];
 
-		let observer = new IntersectionObserver( entries => {
-			let isIntersecting = (entries[0].isIntersecting);
-			!isIntersecting ?
+		document.addEventListener('scroll', () => {
+			let position = window.scrollY;
+			(position >= 150 ) ?
 				backToTop.classList.add('back-to-top-visible')
 			:
 				backToTop.classList.remove('back-to-top-visible')
 		})
-
-		observer.observe(page);
 
 		const scrollToTop = () => {
 			document.body.scrollTop = 0;

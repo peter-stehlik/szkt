@@ -3719,7 +3719,123 @@ header nav {
     display: none;
   }
 }
-<<<<<<< HEAD
+.landing-page {
+  position: relative;
+}
+
+.szkt-leaves-lp {
+  position: absolute;
+  left: -40px;
+  right: 0;
+  top: 10px;
+  margin: auto;
+  z-index: -1;
+  max-width: 580px;
+  width: 100%;
+}
+
+.landing-notice-img {
+  min-width: 170px;
+}
+
+.prepare {
+  border-top: 3px solid #AFCD69;
+  margin: 0;
+}
+
+.landing-intro {
+  background: #f2f2f2;
+}
+
+.triangle-position {
+  position: relative;
+}
+
+.triangle-action, .triangle-prepare {
+  display: none;
+  position: absolute;
+  top: -25px;
+  width: 0px;
+  height: 0px;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 45px solid #009B2D;
+}
+
+.triangle-prepare {
+  left: 0;
+  right: 0;
+  top: -8px;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 25px solid #AFCD69;
+}
+
+.main-backgroung {
+  background: #009B2D;
+}
+
+.invitation {
+  color: #fff;
+}
+
+.want-login {
+  color: #000;
+  border-bottom: 6px solid #fff;
+  width: 120px;
+}
+
+@media (min-width: 320px) {
+  .szkt-leaves-lp {
+    top: 60px;
+  }
+}
+@media (min-width: 515px) {
+  .szkt-leaves-lp {
+    top: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .line-green {
+    visibility: hidden;
+    padding-top: 80px;
+  }
+
+  .szkt-leaves-lp {
+    left: -15px;
+    top: 160px;
+    margin: 0;
+    z-index: 1;
+    width: 35vw;
+  }
+
+  .want-login {
+    width: 170px;
+  }
+
+  .prepare {
+    border: 0;
+  }
+
+  .prepare-height {
+    height: 12rem;
+  }
+
+  .triangle-action, .triangle-prepare {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .szkt-leaves-lp {
+    left: -60px;
+    top: 80px;
+    margin: 0;
+    z-index: 1;
+    width: 37vw;
+  }
+}
 .reports {
   text-align: left;
   padding: 0;
@@ -3740,7 +3856,7 @@ header nav {
   margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .short-line {
@@ -3857,9 +3973,6 @@ header nav {
     width: 25px;
   }
 }
-/*.articles-list {
-
-}*/
 .articles-list-reports-became div {
   margin: 0 0 1rem 0;
 }
@@ -3872,7 +3985,7 @@ header nav {
   margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
 }
 .articles-list-reports-became div div:nth-child(2) h4, .articles-list-reports-became div div:nth-child(2) .h4 {
   margin-top: 0;
@@ -3884,126 +3997,7 @@ header nav {
 
 @media (min-width: 992px) {
   .articles-list-reports-became div {
-    margin: 0 0 2rem 0;
-  }
-}
-=======
->>>>>>> 0dd869d2aad3ddb2ea33bd32a6deaa77adcea0f1
-.landing-page {
-  position: relative;
-}
-
-.szkt-leaves-lp {
-  position: absolute;
-  left: -40px;
-  right: 0;
-  top: 10px;
-  margin: auto;
-  z-index: -1;
-  max-width: 580px;
-  width: 100%;
-}
-
-.landing-notice-img {
-  min-width: 170px;
-}
-
-.prepare {
-  border-top: 3px solid #AFCD69;
-  margin: 0;
-}
-
-.landing-intro {
-  background: #f2f2f2;
-}
-
-.triangle-position {
-  position: relative;
-}
-
-.triangle-action, .triangle-prepare {
-  display: none;
-  position: absolute;
-  top: -25px;
-  width: 0px;
-  height: 0px;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-top: 45px solid #009B2D;
-}
-
-.triangle-prepare {
-  left: 0;
-  right: 0;
-  top: -8px;
-  margin-left: auto;
-  margin-right: auto;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 25px solid #AFCD69;
-}
-
-.main-backgroung {
-  background: #009B2D;
-}
-
-.invitation {
-  color: #fff;
-}
-
-.want-login {
-  color: #000;
-  border-bottom: 6px solid #fff;
-  width: 120px;
-}
-
-@media (min-width: 320px) {
-  .szkt-leaves-lp {
-    top: 60px;
-  }
-}
-@media (min-width: 515px) {
-  .szkt-leaves-lp {
-    top: 30px;
-  }
-}
-@media (min-width: 992px) {
-  .line-green {
-    visibility: hidden;
-    padding-top: 80px;
-  }
-
-  .szkt-leaves-lp {
-    left: -15px;
-    top: 160px;
-    margin: 0;
-    z-index: 1;
-    width: 35vw;
-  }
-
-  .want-login {
-    width: 170px;
-  }
-
-  .prepare {
-    border: 0;
-  }
-
-  .prepare-height {
-    height: 12rem;
-  }
-
-  .triangle-action, .triangle-prepare {
-    display: block;
-  }
-}
-@media (min-width: 1200px) {
-  .szkt-leaves-lp {
-    left: -60px;
-    top: 80px;
-    margin: 0;
-    z-index: 1;
-    width: 37vw;
+    margin: 0 0 3rem 0;
   }
 }
 .clearfix::after {
