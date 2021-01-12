@@ -75,4 +75,7 @@ var Custom = {
 };
 Custom.toggleMobNav();
 Custom.prepareMobSubNav();
+<<<<<<< HEAD
 Custom.scrollToTop();
+=======
+>>>>>>> 0dd869d2aad3ddb2ea33bd32a6deaa77adcea0f1

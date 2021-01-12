@@ -3627,6 +3627,7 @@ header nav {
   font-family: "Hammersmith One", Arial, sans-serif;
   font-size: 1.4375rem;
   line-height: 2.875rem;
+  color: #009B2D;
 }
 
 @media (min-width: 992px) {
@@ -3718,6 +3719,7 @@ header nav {
     display: none;
   }
 }
+<<<<<<< HEAD
 .reports {
   text-align: left;
   padding: 0;
@@ -3885,6 +3887,8 @@ header nav {
     margin: 0 0 2rem 0;
   }
 }
+=======
+>>>>>>> 0dd869d2aad3ddb2ea33bd32a6deaa77adcea0f1
 .landing-page {
   position: relative;
 }
