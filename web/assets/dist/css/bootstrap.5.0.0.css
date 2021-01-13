@@ -4042,6 +4042,30 @@ header nav {
   width: 100%;
 }
 
+.subpage li {
+  list-style: none;
+  color: #333333;
+}
+
+.subpage-header {
+  border-bottom: 1px solid #000;
+}
+
+.subpage-text a {
+  display: block;
+  margin: 1rem 0;
+}
+.subpage-text span {
+  display: block;
+  margin: 1rem 0;
+}
+
+@media (min-width: 992px) {
+  .submenu ul {
+    position: sticky;
+    top: 100px;
+  }
+}
 .clearfix::after {
   display: block;
   clear: both;
