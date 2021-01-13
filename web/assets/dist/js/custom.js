@@ -91,3 +91,4 @@ Custom.toggleMobNav();
 Custom.prepareMobSubNav();
 Custom.scrollToTop();
 Custom.carousel();
+lightGallery(document.getElementById('ul-li'));

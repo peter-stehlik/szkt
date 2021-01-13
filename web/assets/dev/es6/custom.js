@@ -87,4 +87,5 @@ Custom.prepareMobSubNav();
 Custom.scrollToTop();
 Custom.carousel();
 
-lightGallery(document.getElementById('lightgallery'));
+lightGallery(document.getElementById('ul-li'));
+
