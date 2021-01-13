@@ -85,6 +85,25 @@ a {
     color: $gray-400;
 }
 
+.footer {
+    font: {
+        family: $font-family-sans-serif;
+        size: $font-size-xs;
+        weight: $font-weight-normal;
+    }
+    line-height: $line-height-sm;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $gray-800;
+    .col-lg-4:nth-child(2) {
+        font: {
+            family: $font-family-sans-serif-2;
+        };
+    }
+}
+
+
+
 .column-items-center {
     display: flex;
     flex-direction: column;
@@ -177,4 +196,21 @@ a {
             size: $font-size-base;
         }
     }
+    .footer {
+        font: {
+            family: $font-family-sans-serif;
+            size: $font-size-base;
+            weight: $font-weight-lighter;
+        }
+        line-height: $line-height-sm;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $gray-800;
+        .col-lg-4:nth-child(2) {
+            font: {
+                family: $font-family-sans-serif;
+            };
+        }
+    }
+
 }
