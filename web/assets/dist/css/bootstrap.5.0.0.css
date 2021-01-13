@@ -3904,12 +3904,32 @@ header nav {
   padding: 0 1rem 0 0;
   margin: 0;
 }
+.reports-became div div:nth-child(1) a {
+  overflow: hidden;
+  display: block;
+  height: 100%;
+}
+.reports-became div div:nth-child(1) img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.reports-became div div:nth-child(1) img:hover {
+  transform: scale(1.2);
+}
 .reports-became div div:nth-child(2) {
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.reports-became div div:nth-child(2) h4, .reports-became div div:nth-child(2) .h4 {
+  margin-top: 0;
+}
+.reports-became div div:nth-child(2) p {
+  margin: 0;
 }
 
 .short-line {
@@ -3925,6 +3945,9 @@ header nav {
 
   .reports-became div {
     padding: 1rem 1rem 0 1rem;
+  }
+  .reports-became div div:nth-child(2) {
+    padding: 0 2rem;
   }
 
   .reports-prepare div {
