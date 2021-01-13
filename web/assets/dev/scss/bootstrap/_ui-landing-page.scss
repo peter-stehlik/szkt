@@ -71,6 +71,9 @@
 
 .invitation {
     color: $white;
+    height: 34px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 .want-login {
@@ -112,9 +115,14 @@
         width: 35vw;
     }
 
+    .invitation {
+        height: 80px;
+    }
+
     .want-login {
         width: 170px;
     }
+
 
     .prepare {
         border: 0;
