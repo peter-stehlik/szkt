@@ -13,6 +13,10 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.css" />
+
     <link rel="stylesheet" href="assets/dist/css/bootstrap.5.0.0.css">
 </head>
 
@@ -137,20 +141,57 @@
 
                     </div>
 
-                    <div class="row my-4 d-flex justify-content-md-center justify-content-start">
-                        <div class="col-6">
-                            <div class="row spec-article-carousel">
-                                <div class="col-4">
-                                    <a href="javascript:void(0)"><img src="./images/DSC_9087 1.png" alt="image"></a>
-                                </div>
-                                <div class="col-4">
-                                    <a href="javascript:void(0)"><img src="./images/DSC_9100 1.png" alt="image"></a>
-                                </div>
-                                <div class="col-4">
-                                    <a href="javascript:void(0)"><img src="./images/DSC_9196 1.png" alt="image"></a>
+
+                    <div class="row d-flex justify-content-center spec-article-carousel">
+                        <div class="col-12 col-md-9 col-lg-6">
+                            <div class="glide">
+                                <div class="glide__track" data-glide-el="track">
+                                    <ul class="glide__slides">
+
+                                        <div id=lightgallery">
+                                            <a href="./images/14939942_956586741119893_2530841931448208512_o 1.png">
+                                                <img src="./images/14939942_956586741119893_2530841931448208512_o 1.png" class="glide__slide">
+                                            </a>
+                                        </div>
+
+                                        <div id=lightgallery">
+                                            <a href="./images/16649162_1049295478515685_935026759322599674_n 1.png">
+                                                <img src="./images/16649162_1049295478515685_935026759322599674_n 1.png" class="glide__slide">
+                                            </a>
+                                        </div>
+
+                                        <div id=lightgallery">
+                                            <a href="./images/1976998-f201609060830501 1.jpg">
+                                                <img src="images/1976998-f201609060830501 1.jpg" class="glide__slide">
+                                            </a>
+                                        </div>
+
+                                        <div id=lightgallery">
+                                            <a href="./images/16649162_1049295478515685_935026759322599674_n 1.png">
+                                                <img src="./images/16649162_1049295478515685_935026759322599674_n 1.png" class="glide__slide">
+                                            </a>
+                                        </div>
+
+                                        <div id=lightgallery">
+                                            <a href="./images/1976998-f201609060830501 1.jpg">
+                                                <img src="./images/1976998-f201609060830501 1.jpg" class="glide__slide">
+                                            </a>
+                                        </div>
+
+                                    </ul>
+                                    <div class="glide__arrows p-0" data-glide-el="controls">
+                                        <button class="glide__arrow glide__arrow--left  carousel-arrow" data-glide-dir="<"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                            <path d="M0 12l10.975 11 2.848-2.828-6.176-6.176H24v-3.992H7.646l6.176-6.176L10.975 1 0 12z"></path>
+                                        </svg></button>
+
+                                        <button class="glide__arrow glide__arrow--right carousel-arrow" data-glide-dir=">"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                            <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path>
+                                        </svg></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
                     <div class="row mt-1 mt-lg-3 d-none d-lg-flex justify-content-center spec-article-text">
@@ -283,6 +324,13 @@
         </div>
 
     </div><!-- / .container -->
+
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script src="js/lightgallery.min.js"></script>
+
+    <!-- lightgallery plugins -->
+    <script src="js/lg-thumbnail.min.js"></script>
+    <script src="js/lg-fullscreen.min.js"></script>
 
     <script src="assets/dist/js/custom.js"></script>
 </body>

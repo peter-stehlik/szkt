@@ -62,11 +62,29 @@ let Custom = {
 			document.documentElement.scrollTop = 0;
 		}
 		scrollTopIcon.addEventListener('click', scrollToTop);
+	},
+	carousel: () => {
+		var glide = new Glide('.glide', {
+			type: 'carousel',
+			startAt: 0,
+			perView: 3,
+			keyboard: true,
+			animationTimingFunc: 'ease',
+			animationDuration: 600,
+			breakpoints: {
+				768: {
+					perView: 1
+				}
+			}
+		})
+
+		glide.mount();
 	}
 }
 
 Custom.toggleMobNav();
 Custom.prepareMobSubNav();
 Custom.scrollToTop();
+Custom.carousel();
 
-
+lightGallery(document.getElementById('lightgallery'));

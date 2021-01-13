@@ -4042,6 +4042,26 @@ header nav {
   width: 100%;
 }
 
+.carousel-arrow {
+  background: #c4c4c4;
+}
+.carousel-arrow svg {
+  fill: #fff;
+}
+
+.glide__arrow {
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .glide__arrow--left {
+    left: -3em;
+  }
+
+  .glide__arrow--right {
+    right: -3.3em;
+  }
+}
 .subpage li {
   list-style: none;
   color: #333333;

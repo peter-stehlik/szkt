@@ -16,8 +16,10 @@
 		"grunt-postcss": "^0.9.0"
 	},
 	"dependencies": {
+		"@glidejs/glide": "^3.4.1",
 		"autoprefixer": "^9.8.6",
-		"cssnano": "^4.1.10"
+		"cssnano": "^4.1.10",
+		"lightgallery.js": "^1.4.0"
 	},
 	"browserslist": [
 		"last 2 versions",

@@ -36,3 +36,29 @@
         }
     }
 }
+
+.carousel-arrow {
+    svg {
+        fill: $white;
+    }
+    background: $gray-400;
+
+}
+
+.glide__arrow {
+    border-radius: 50%;
+}
+
+
+
+@include media-breakpoint-up(md) {
+
+    .glide__arrow--left {
+        left: -3em;
+    }
+
+    .glide__arrow--right {
+        right: -3.3em;
+    }
+
+}

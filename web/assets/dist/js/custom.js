@@ -69,8 +69,25 @@ var Custom = {
     };
 
     scrollTopIcon.addEventListener('click', scrollToTop);
+  },
+  carousel: function carousel() {
+    var glide = new Glide('.glide', {
+      type: 'carousel',
+      startAt: 0,
+      perView: 3,
+      keyboard: true,
+      animationTimingFunc: 'ease',
+      animationDuration: 600,
+      breakpoints: {
+        768: {
+          perView: 1
+        }
+      }
+    });
+    glide.mount();
   }
 };
 Custom.toggleMobNav();
 Custom.prepareMobSubNav();
 Custom.scrollToTop();
+Custom.carousel();
