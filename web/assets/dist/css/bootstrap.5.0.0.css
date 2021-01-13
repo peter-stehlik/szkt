@@ -4056,6 +4056,20 @@ header nav {
   padding: 0 1rem 0 0;
   margin: 0;
 }
+.articles-list-reports-became div div:nth-child(1) a {
+  overflow: hidden;
+  display: block;
+  height: 100%;
+}
+.articles-list-reports-became div div:nth-child(1) img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.articles-list-reports-became div div:nth-child(1) img:hover {
+  transform: scale(1.2);
+}
 .articles-list-reports-became div div:nth-child(2) {
   padding: 0;
   margin: 0;
@@ -4074,6 +4088,9 @@ header nav {
 @media (min-width: 992px) {
   .articles-list-reports-became div {
     margin: 0 0 3rem 0;
+  }
+  .articles-list-reports-became div div:nth-child(2) {
+    padding: 0 2rem;
   }
 }
 .spec-article-intro {
