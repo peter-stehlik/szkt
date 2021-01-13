@@ -118,6 +118,12 @@ a {
 		}
     }
 
+    .column-items-center {
+        display: unset;
+
+    }
+
+
     .header-secondary {
         font: {
             size: $h2-font-size * 1.5;

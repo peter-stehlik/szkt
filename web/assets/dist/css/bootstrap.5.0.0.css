@@ -3481,9 +3481,19 @@ a {
   color: #c4c4c4;
 }
 
+.column-items-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 @media (min-width: 992px) {
   .header {
     font-size: 3rem;
+  }
+
+  .column-items-center {
+    display: unset;
   }
 
   .header-secondary {
@@ -3829,7 +3839,7 @@ header nav {
   }
 
   .prepare-height {
-    height: 12rem;
+    height: 14rem;
   }
 
   .triangle-action, .triangle-prepare {
