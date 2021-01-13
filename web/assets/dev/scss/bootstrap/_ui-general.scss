@@ -101,6 +101,11 @@ a {
     color: $gray-400;
 }
 
+.column-items-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
 
